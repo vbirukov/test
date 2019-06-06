@@ -1,0 +1,14 @@
+{
+    "plan": "./img/plans/plan-44.png",
+    "name": "Студия №44",
+    "finishing": "черновая отделка",
+    "square": 28,
+    "floor":  "12/14",
+    "price": "1 900 000",
+    "status": "booked",
+    "topBar": {
+        "discount": 0,
+        "spcl": false,
+        "marked": true
+    }
+}

@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: "Open Sans Bold";
+    src: url(./fonts/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face { 
+    font-family: "Open Sans";
+    src: url(./fonts/OpenSans-Regular.ttf) format("truetype");
+}
+body {
+    h1, h2 {
+        font-family: 'Open Sans Bold', sans-serif;
+    }
+    p, li, a {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .footer * {
+        font-family: "Open Sans", sans-serif;
+    }
+}

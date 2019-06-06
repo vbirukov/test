@@ -1,0 +1,58 @@
+- var menu = ["Объекты", "Компания", "Как купить", "Агентам", "Регионам", "Акции", "Контакты"];
+
+doctype html
+
+html
+
+    head
+        meta(charset="utf-8")
+        meta(lang="ru")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Поиск квартир
+
+    body
+        header.header
+            .header__wrapper
+                a.header__logo(href="")
+                    img.header__logo__img(src="./img/logo.png", alt="")
+                ul.header__menu
+                    for item in menu
+                        li.header__menu__item=item
+                .header__contacts
+                    a.header__contacts__phone(href="tel:+7888888898") 8 888 88 88 98
+                    p.header__contacts__callToAction Звони скорее!
+                a.header__mobileMenu__trigger
+                ul.header__mobileMenu__menu.hidden#mobileMenu
+                    li.header__mobileMenu__menu__closebtn__wrapper
+                        a.closebtn(href="javascript:void(0)")    
+                    for item in menu
+                        li.header__mobileMenu__menu__item=item
+
+        .mainarea
+            .mainarea__container
+                h1.mainarea__title Найдено 666 квартир
+            .mainarea__searchResults
+                .container
+                    .mainarea__searchResults__sortBy
+                        p.mainarea__searchResults__sortBy__title Сортировать по:
+                        button.mainarea__searchResults__sortBy__button.arrow-down.active#sortByPrice Цене
+                        button.mainarea__searchResults__sortBy__button.arrow-up#sortByRooms Комнатам
+                .mainarea__searchResults__cards
+
+        a#toTop
+
+        .footer
+            .footer__callToAction
+                p.footer__callToAction__title Успей купить!
+                p.footer__callToAction__subtitle Подпишись и успей словить все акции
+            .footer__signupForm
+                .footer__signupForm__form
+                    input(type='text', placeholder='E-mail').footer__signupForm__form__input
+                    label.footer__signupForm__form__checkboxWrapper Подписаться на новости
+                        input(type='checkbox' checked id='signupagreement').checkbox
+                        span.checkmark
+                .footer__signupForm__button Подписаться
+
+
+            

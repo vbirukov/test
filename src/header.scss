@@ -1,0 +1,89 @@
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 160px 20px 106px;
+    background-color: $bg-green;
+    &__wrapper {
+        * {
+            color: $font-header;
+            margin: 0;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1600px;
+        margin: auto;
+    }
+    &__logo {
+        display: block;
+        width: 34px;
+        height: 85px;
+    }
+    &__contacts {
+        &__phone {
+            font-size: 26px;
+            text-decoration: none;
+        }
+        &__callToAction {
+            font-size: 18px;
+        }
+    }
+    &__menu {
+        margin-left: 20px;
+        margin-right: 20px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        max-width: 1030px;
+        font-size: 24px;
+        padding: 0;
+        &__item {
+            cursor: pointer;
+            &:hover {
+                text-shadow: 1px 1px 1px gray;
+            }
+        }
+    }
+    &__mobileMenu__trigger {
+        background: url('./img/bars-solid.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+    }
+    &__mobileMenu__menu {
+        list-style: none;
+        background: $bg-green;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-sizing: border-box;
+        padding-left: 0;
+        &__item {        
+            font-size: 20px;
+            margin-top: 20px;
+            padding-left: 40px;
+        }
+        &__closebtn__wrapper {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 30px;
+            height: 30px;
+            // margin-left: 50px;
+        }
+        .closebtn {
+            background: url('./img/times-solid.svg') no-repeat center;
+            display: block;
+            font-size: 36px;
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+}
